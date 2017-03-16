@@ -11,9 +11,9 @@
     },
     "repository": {
         "type": "git",
-        "url": "git://github.com/substack/camelize.git"
+        "url": "git://github.com/ricas07/camelize.git"
     },
-    "homepage": "https://github.com/substack/camelize",
+    "homepage": "https://github.com/ricas07/camelize",
     "keywords": [
         "camel-case",
         "json",

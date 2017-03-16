@@ -1,7 +1,7 @@
 {
-    "name": "camelize",
+    "name": "camelize-keys",
     "version": "1.0.0",
-    "description": "recursively transform key strings to camel-case",
+    "description": "recursively transform key strings to camel-case, forked fro camelize (https://github.com/substack/camelize)",
     "main": "index.js",
     "devDependencies": {
         "tape": "~2.3.2"

@@ -1,5 +1,5 @@
 module.exports = function(obj) {
-    if (typeof obj === 'string') return camelCase(obj);
+    // if (typeof obj === 'string') return camelCase(obj);
     return walk(obj);
 };
 

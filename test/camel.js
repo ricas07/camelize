@@ -21,9 +21,9 @@ test('camelize a nested object', function (t) {
     });
 });
 
-test('string', function (t) {
+test('string should not be camelized', function (t) {
     t.plan(1);
-    t.equal(camelize('one_two'), 'oneTwo');
+    t.equal(camelize('one_two'), 'one_two');
 });
 
 test('date', function (t) {
@@ -38,9 +38,9 @@ test('regex', function (t) {
     t.equal(camelize(r), r);
 });
 
-test('only camelize strings that are the root value', function (t) {
+test('only camelize object keys, not strings that are the root value', function (t) {
     t.plan(2);
-    t.equal(camelize('foo-bar'), 'fooBar');
+    t.equal(camelize('domain.com'), 'domain.com');
     var res = camelize({ 'foo-bar': 'baz-foo' });
     t.deepEqual(res, { fooBar: 'baz-foo' });
 });
